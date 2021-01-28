@@ -36,6 +36,15 @@ function reverseString(str) {
 }
 
 // Write out a recursive function to see if a word is a palindrome.
+// abba
+// check if first and last are same
 function isPalindrome(str) {
-  
+  if (str.length > 1 && str[0] === str[str.length - 1]) {
+    isPalindrome(str.substring(1, str.length - 1))
+    return true
+  } else if (str.length === 1) {
+      return true
+  } else {
+       return false
+  }
 }
