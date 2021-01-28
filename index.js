@@ -27,9 +27,12 @@ function reverseString(str) {
   //   return reverseString(str.substring(1)) + str[0]
   // }
 
-  if (str === "") return str
+  // if (str === "") return str
    
-  return reverseString(str.substring(1)) + str[0]
+  // return reverseString(str.substring(1)) + str[0]
+
+   
+  return str ? reverseString(str.substring(1)) + str[0] : str
 
 
 }
