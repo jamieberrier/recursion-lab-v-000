@@ -48,3 +48,14 @@ function isPalindrome(str) {
        return false
   }
 }
+
+// sums all members up to a given index in an array
+// addUpTo([1,2,3,4], 2) => 6
+function addUpTo(nums, index) {
+  if (index > 0) {
+    nums[0] = nums[0] + nums[index]
+    addUpTo(nums, --index)
+  }
+
+  return nums[0]
+}
