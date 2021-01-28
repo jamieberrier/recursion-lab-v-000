@@ -33,8 +33,9 @@ function reverseString(str) {
 
    
   return str ? reverseString(str.substring(1)) + str[0] : str
-
-
 }
 
 // Write out a recursive function to see if a word is a palindrome.
+function isPalindrome(str) {
+  
+}
