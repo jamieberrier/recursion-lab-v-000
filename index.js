@@ -21,10 +21,11 @@ function printString(myString) {
 
 // Write out a recursive function to reverse a string.
 function reverseString(str) {
-  // add str's last char to revStr
-  // remove last char from str
-  // call reverseString until str length is 0
-
+  if (str === "") {
+    return str
+  } else {
+    return reverseString(str.substring(1)) + str[0]
+  }
 }
 
 // Write out a recursive function to see if a word is a palindrome.
