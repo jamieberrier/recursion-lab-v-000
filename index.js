@@ -1,4 +1,13 @@
+// To solve the problems below, use the technique we just learned for finding recursive solutions. 
+// Remember:
+
+// Apply the problem to a specific case (i.e., choose an example).
+// Write out a function that solves that particular example.
+// Reword that function so that it uses recursion, invoking itself.
+
 // Code your solution here!
+
+// Write a recursive function to print out all of the characters in a string.
 function printString(myString) {
   console.log(myString[0]);
  
@@ -9,3 +18,13 @@ function printString(myString) {
     return true;
   }
 }
+
+// Write out a recursive function to reverse a string.
+function reverseString(str) {
+  // add str's last char to revStr
+  // remove last char from str
+  // call reverseString until str length is 0
+
+}
+
+// Write out a recursive function to see if a word is a palindrome.
