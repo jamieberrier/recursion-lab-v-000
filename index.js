@@ -61,6 +61,7 @@ function addUpTo(nums, index) {
 }
 
 // finds the largest integer in an array
+// maxOf([1, 4, 5, 3]) => 4
 function maxOf() {
 
 }
