@@ -59,3 +59,8 @@ function addUpTo(nums, index) {
 
   return nums[0]
 }
+
+// finds the largest integer in an array
+function maxOf() {
+
+}
