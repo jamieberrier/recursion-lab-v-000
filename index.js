@@ -67,7 +67,7 @@ function maxOf(arr) {
 
   if (arr.length > 1) {
     if (arr[0] < arr[1]) {
-      arr.splice(0,1)
+      arr.shift()
       maxOf(arr)
     } else {
       arr.splice(1,1)
@@ -76,4 +76,22 @@ function maxOf(arr) {
   }
 
   return arr[0]
+}
+
+// returns 'true' if the number is present in the array
+// returns 'false' if the number is not present in the array
+// [1, 4, 5, 3], 5) => true
+function includesNumber(arr, num) {
+  if (arr.length > 1) {
+    if (arr[0] === num) {
+      return true
+    } else {
+      arr.shift()
+      includesNumber(arr, num)
+    }
+  } else {
+    return arr[0] === num
+  }
+
+  //return false
 }
